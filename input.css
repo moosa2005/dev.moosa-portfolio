@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@source "./index.html";
+@source "./script.js";
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+    overflow: clip;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+.lenis.lenis-autoToggle {
+    transition-property: overflow;
+    transition-duration: 1ms;
+    transition-behavior: allow-discrete;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+    background-color: #E8E8E3;
+    overflow-x: hidden;
+}
+
+/* Atmospheric Grain Overlay */
+.grain-layer {
+    filter: url(#grainy);
+}
+
+/* Rolling Text Animation */
+.slide-text {
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-heading span,
+.joined_year span {
+    display: inline-block;
+    line-height: 1;
+}
+
+
+/* Framer-inspired Scroll Progress Bar */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #8C8C73 0%, #1A1A1A 100%);
+    width: 0%;
+    z-index: 99999;
+    pointer-events: none;
+    transition: width 0.1s ease-out;
+}
+
+/* Infinite Running Marquee */
+.marquee-track {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-scroll 35s linear infinite;
+}
+
+.marquee-track-reverse {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-scroll-reverse 35s linear infinite;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-scroll-reverse {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.marquee-container:hover .marquee-track,
+.marquee-container:hover .marquee-track-reverse {
+    animation-play-state: paused;
+}
+
+/* Terminal & Code Styling */
+.terminal-window {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Custom Scrollbar for inner boxes */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393632;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8C8C73;
+}

@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Moosa — Fullstack Developer & Web Engineer</title>
+    <meta name="description" content="Portfolio of Muhammad Moosa — Fullstack Developer & Web Engineer building high-performance web systems, AI utilities, and interactive developer tools like CommandsLab.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="loader-active">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+    <!-- Atmospheric SVG Grain Overlay -->
+    <div class="grain-layer fixed inset-0 w-full h-full pointer-events-none z-[9999] mix-blend-normal opacity-[0.111]">
+    </div>
+    <svg style="position: absolute; width: 0; height: 0; pointer-events: none;">
+        <filter id="grainy">
+            <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" stitchTiles="stitch" />
+            <feColorMatrix type="saturate" values="0" />
+        </filter>
+    </svg>
+
+    <div class="w-full">
+        <!-- Preloader -->
+        <div class="loader1 w-full h-dvh fixed z-50 top-0 flex items-center flex-col overflow-hidden justify-between bg-[#1A1A1A]">
+            <div class="p-5 topHeading">
+                <h5 class="text-[#E0E0E0] text-center uppercase tracking-widest text-sm">Portfolio</h5>
+                <h5 class="text-[#A9A9A9] text-center text-sm">© <span class="current-year"></span></h5>
+            </div>
+            <div class="Intro-heading">
+                <h5 class="text-[#E0E0E0] leading-normal text-4xl sm:text-5xl md:text-7xl text-center font-medium">
+                    Greetings! This is
+                </h5>
+            </div>
+            <div class="p-5 loaderAnimation1">
+                <h5 class="text-[#E0E0E0] text-center uppercase tracking-wider text-sm">"Building High-Impact Web Systems with Code"</h5>
+                <p class="text-[#A9A9A9] text-center text-xs tracking-widest mt-1">MUHAMMAD MOOSA</p>
+            </div>
+        </div>
+
+        <!-- Global Header -->
+        <header id="header" class="w-full absolute top-0 z-40">
+            <div class="flex justify-between px-4 md:px-6 mt-5 items-center">
+                <a href="#" class="text-xl text-[#1A1A1A] font-semibold tracking-tight hover:opacity-80 transition-opacity">
+                    MM<sup class="text-xl text-[#1A1A1A] font-medium">©</sup>
+                </a>
+                <div class="flex items-center w-[60%] md:w-[70%] lg:w-[50%] xl:w-[42%] gap-2 justify-end">
+                    <div class="menu hidden md:flex w-full items-center justify-between text-sm">
+                        <div class="menu-line text-[#1A1A1A] w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#services">Services</a>
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#services">Services</a>
+                        </div>
+                        <div class="menu-line w-fit text-[#1A1A1A] group flex flex-col h-6 items-center relative overflow-hidden">
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#commandslab">CommandsLab</a>
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#commandslab">CommandsLab</a>
+                        </div>
+                        <div class="menu-line w-fit text-[#1A1A1A] group flex flex-col h-6 items-center relative overflow-hidden">
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#project">Projects</a>
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#project">Projects</a>
+                        </div>
+                        <div class="menu-line w-fit text-[#1A1A1A] group flex flex-col h-6 items-center relative overflow-hidden">
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#workflow">Workflow</a>
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#workflow">Workflow</a>
+                        </div>
+                        <div class="menu-line w-fit text-[#1A1A1A] group flex flex-col h-6 items-center relative overflow-hidden">
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#about">About</a>
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#about">About</a>
+                        </div>
+                        <div class="menu-line w-fit text-[#1A1A1A] group flex flex-col h-6 items-center relative overflow-hidden">
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="./assets/Resume.pdf" download="Muhammad_Moosa_Resume.pdf">Resume</a>
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="./assets/Resume.pdf" download="Muhammad_Moosa_Resume.pdf">Resume</a>
+                        </div>
+                        <div class="menu-line text-[#1A1A1A] w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#contact">Contact</a>
+                            <a class="nav-links slide-text group-hover:-translate-y-full" href="#contact">Contact</a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Hamburger -->
+                    <div class="hamburger md:hidden fixed md:relative rounded-full flex flex-col items-center gap-1 justify-center cursor-pointer bg-[#BFBFB1] z-50 w-12 h-12 shadow-sm">
+                        <span class="line1 bg-[#1A1A1A] h-0.5 w-6 transition-all duration-300 origin-center"></span>
+                        <span class="line2 bg-[#1A1A1A] h-0.5 w-6 transition-all duration-300 origin-center"></span>
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation Drawer -->
+                <div class="mobile-nav-box translate-x-full fixed top-0 right-0 flex flex-col justify-between p-6 w-full h-dvh bg-[#393632] z-40 md:hidden overflow-y-auto">
+                    <div class="flex justify-between items-center pt-2">
+                        <span class="text-xl text-[#e8e8e3] font-semibold">MM<sup>©</sup></span>
+                        <span class="text-xs uppercase tracking-widest text-[#a29e9a]">Fullstack Developer</span>
+                    </div>
+
+                    <div class="mobile-nav-list flex flex-col justify-center space-y-4 my-auto">
+                        <div class="item item1">
+                            <a href="#services" class="text-3xl sm:text-4xl font-medium text-[#e8e8e3]">SERVICES</a>
+                        </div>
+                        <div class="item item2">
+                            <a href="#commandslab" class="text-3xl sm:text-4xl font-medium text-[#e8e8e3]">COMMANDSLAB</a>
+                        </div>
+                        <div class="item item3">
+                            <a href="#project" class="text-3xl sm:text-4xl font-medium text-[#e8e8e3]">PROJECTS</a>
+                        </div>
+                        <div class="item item4">
+                            <a href="#workflow" class="text-3xl sm:text-4xl font-medium text-[#e8e8e3]">WORKFLOW</a>
+                        </div>
+                        <div class="item item5">
+                            <a href="#about" class="text-3xl sm:text-4xl font-medium text-[#e8e8e3]">ABOUT</a>
+                        </div>
+                        <div class="item item6">
+                            <a href="./assets/Resume.pdf" download="Muhammad_Moosa_Resume.pdf" class="text-3xl sm:text-4xl font-medium text-[#e8e8e3]">RESUME</a>
+                        </div>
+                        <div class="item item7">
+                            <a href="#contact" class="text-3xl sm:text-4xl font-medium text-[#e8e8e3]">CONTACT</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-details-list flex flex-col space-y-4 pb-4 border-t border-[#4e4b47] pt-4">
+                        <div class="email-section">
+                            <p class="text-[#a29e9a] text-xs uppercase tracking-wider">Direct Contact</p>
+                            <a class="text-[#e8e8e3] text-base hover:underline block" href="mailto:muhammadmoosa9998@gmail.com">muhammadmoosa9998@gmail.com</a>
+                            <a class="text-[#a29e9a] text-sm hover:underline block" href="tel:+923320826820">+92 332 0826820</a>
+                        </div>
+                        <div class="social-media flex flex-wrap gap-4 mt-2">
+                            <a href="https://github.com/moosa2005" target="_blank" rel="noopener noreferrer" class="social-link p-2 bg-[#4e4b47] rounded-full text-[#e8e8e3]">
+                                <i class="fa-brands fa-github text-lg"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muhammad-moosa2005/" target="_blank" rel="noopener noreferrer" class="social-link p-2 bg-[#4e4b47] rounded-full text-[#e8e8e3]">
+                                <i class="fa-brands fa-linkedin text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Page 1: Hero Section -->
+            <div id="page1" class="w-full h-dvh flex overflow-hidden">
+                <div class="sticky top-0 left-0 flex flex-col justify-between w-full h-full gap-4 px-4 pt-16 pb-6 md:px-5 md:pt-12 md:pb-5 lg:px-6 lg:pb-6">
+                    <div class="hidden md:flex items-baseline justify-between top-section w-full">
+                        <div class="top-heading flex flex-wrap items-baseline gap-x-6 lg:gap-x-10">
+                            <span class="first-heading text-[#1A1A1A] text-[6vw] lg:text-[7vw] xl:text-[6.8rem] font-medium leading-none tracking-tight">MUHAMMAD</span>
+                            <span class="second-heading text-[#1A1A1A] text-[6vw] lg:text-[7vw] xl:text-[6.8rem] font-medium leading-none tracking-tight">MOOSA</span>
+                        </div>
+                        <div class="hero-role-badge hidden xl:flex flex-col text-right pb-1 select-none">
+                            <span class="text-xs uppercase tracking-widest text-[#8C8C73] font-mono font-medium">[ PK • UTC+5 ]</span>
+                            <span class="text-xs uppercase tracking-wider text-[#6b645c] font-medium mt-0.5">FULLSTACK WEB ENGINEER</span>
+                        </div>
+                    </div>
+                    <div class="bottom-section items-end w-full flex justify-between flex-wrap pb-2">
+                        <div class="mobile-top-heading block md:hidden w-full mb-3">
+                            <h1 class="mobile-first-heading text-[#1A1A1A] font-medium tracking-tight flex flex-col">
+                                <span class="block text-[13vw] sm:text-[11vw] leading-[0.92] text-[#1A1A1A]">MUHAMMAD</span>
+                                <span class="block text-[13vw] sm:text-[11vw] leading-[0.92] text-[#1A1A1A]">MOOSA</span>
+                            </h1>
+                        </div>
+                        <div class="intro w-full flex flex-col space-y-6 self-start xl:self-end md:w-[48%] lg:w-[42%] xl:w-[38%]">
+                            <div class="arrow-icon overflow-hidden hidden sm:block">
+                                <svg stroke="currentColor" fill="none" stroke-width="1.25" viewBox="6 6 12 12"
+                                    stroke-linecap="round" stroke-linejoin="round" class="m-0 size-4 p-0 md:size-6"
+                                    color="#8C8C73" style="color:#8C8C73" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="7" y1="7" x2="17" y2="17"></line>
+                                    <polyline points="17 7 17 17 7 17"></polyline>
+                                </svg>
+                            </div>
+                            <div class="intro-text">
+                                <p class="text-[#6b645c] overflow-hidden text-lg md:text-xl leading-relaxed">
+                                    Fullstack Developer & Web Engineer building high-performance web systems, AI utilities, and interactive cybersecurity tools like CommandsLab.
+                                </p>
+                            </div>
+                            <div class="button-clip-wrapper overflow-hidden flex flex-wrap items-center gap-3">
+                                <a href="mailto:muhammadmoosa9998@gmail.com" class="inline-block">
+                                    <button class="relative bg-[#393632] cursor-pointer px-6 py-2.5 rounded-full overflow-hidden group flex items-center gap-2">
+                                        <div class="absolute inset-0 bg-[#8c8c73] rounded-full translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out z-0">
+                                        </div>
+                                        <div class="relative h-[28px] overflow-hidden z-10">
+                                            <div class="flex items-center gap-2 transition-transform duration-500 ease-in-out group-hover:-translate-y-full">
+                                                <span class="text-[#E8E8E3] text-base md:text-lg font-medium">Let's Connect</span>
+                                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="6 6 12 12" stroke-linecap="round" stroke-linejoin="round" class="size-2.5 md:size-3 text-[#E8E8E3]" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="7" y1="7" x2="17" y2="17"></line>
+                                                    <polyline points="17 7 17 17 7 17"></polyline>
+                                                </svg>
+                                            </div>
+                                            <div class="absolute top-full left-0 flex items-center gap-2 w-full transition-all duration-500 ease-in-out group-hover:top-0">
+                                                <span class="text-[#E8E8E3] text-base md:text-lg font-medium">Let's Connect</span>
+                                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="6 6 12 12" stroke-linecap="round" stroke-linejoin="round" class="size-2.5 md:size-3 text-[#E8E8E3]" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="7" y1="7" x2="17" y2="17"></line>
+                                                    <polyline points="17 7 17 17 7 17"></polyline>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/moosa2005" target="_blank" rel="noopener noreferrer" class="text-sm font-medium border border-[#7e766c] text-[#1A1A1A] px-4 py-2 rounded-full hover:bg-[#1A1A1A] hover:text-[#E8E8E3] transition-all">
+                                    <i class="fa-brands fa-github mr-1"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="work-details w-full sm:w-[50%] md:w-1/3 text-left sm:text-right mt-6 sm:mt-0">
+                            <div class="work-status overflow-hidden">
+                                <p class="text-[#6b645c] uppercase text-xs md:text-sm tracking-wider">
+                                    Available for work
+                                </p>
+                            </div>
+                            <div class="joined_year overflow-hidden">
+                                <span class="text-3xl md:text-5xl lg:text-6xl uppercase font-medium text-[#1A1A1A]">2025/26</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Running Editorial Marquee Ticker -->
+            <div class="w-full py-4 border-y border-[#7e766c]/30 overflow-hidden bg-[#E8E8E3] select-none">
+                <div class="marquee-track flex items-center space-x-8 text-sm md:text-base tracking-widest text-[#1A1A1A] uppercase font-medium">
+                    <span>FULLSTACK ENGINEERING</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>COMMANDSLAB PENTESTING TOOL</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>NEXT.JS & TYPESCRIPT</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>AI NLP HUMANIZER</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>GSAP & LENIS SMOOTH SCROLL</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>CLIENT-SIDE RESUME & BG REMOVER</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>FULLSTACK ENGINEERING</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>COMMANDSLAB PENTESTING TOOL</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>NEXT.JS & TYPESCRIPT</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>AI NLP HUMANIZER</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>GSAP & LENIS SMOOTH SCROLL</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                    <span>CLIENT-SIDE RESUME & BG REMOVER</span>
+                    <span class="text-[#8c8c73]">✦</span>
+                </div>
+            </div>
+
+            <!-- Statement Parallax Text Banners (Editorial Kinetic Manifesto) -->
+            <section class="ribbon-scroll-section w-full py-16 md:py-28 overflow-hidden bg-[#E8E8E3] relative select-none">
+                <div class="flex flex-col items-center justify-center gap-2.5 sm:gap-3.5 md:gap-5 w-full">
+                    
+                    <!-- Line 1: Slides Left -->
+                    <div class="ribbon-row ribbon-row-left will-change-transform flex justify-center w-full">
+                        <span class="inline-block bg-[#1A1A1A] text-[#E8E8E3] text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight px-5 py-2 sm:px-8 sm:py-3 md:px-12 md:py-4 rounded-sm shadow-2xl whitespace-nowrap uppercase">
+                            CODE IS THE ARMOUR
+                        </span>
+                    </div>
+
+                    <!-- Line 2: Slides Right -->
+                    <div class="ribbon-row ribbon-row-right will-change-transform flex justify-center w-full">
+                        <span class="inline-block bg-[#1A1A1A] text-[#E8E8E3] text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight px-5 py-2 sm:px-8 sm:py-3 md:px-12 md:py-4 rounded-sm shadow-2xl whitespace-nowrap uppercase">
+                            TO NAVIGATE MODERN SYSTEMS
+                        </span>
+                    </div>
+
+                    <!-- Line 3: Slides Left -->
+                    <div class="ribbon-row ribbon-row-left will-change-transform flex justify-center w-full">
+                        <span class="inline-block bg-[#1A1A1A] text-[#E8E8E3] text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight px-5 py-2 sm:px-8 sm:py-3 md:px-12 md:py-4 rounded-sm shadow-2xl whitespace-nowrap uppercase">
+                            ONE IS NEVER OVER-ENGINEERED
+                        </span>
+                    </div>
+
+                    <!-- Line 4: Slides Right -->
+                    <div class="ribbon-row ribbon-row-right will-change-transform flex justify-center w-full">
+                        <span class="inline-block bg-[#1A1A1A] text-[#E8E8E3] text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight px-5 py-2 sm:px-8 sm:py-3 md:px-12 md:py-4 rounded-sm shadow-2xl whitespace-nowrap uppercase">
+                            NOR UNDER-SECURED
+                        </span>
+                    </div>
+
+                    <!-- Line 5: Slides Left -->
+                    <div class="ribbon-row ribbon-row-left will-change-transform flex justify-center w-full">
+                        <span class="inline-block bg-[#1A1A1A] text-[#E8E8E3] text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight px-5 py-2 sm:px-8 sm:py-3 md:px-12 md:py-4 rounded-sm shadow-2xl whitespace-nowrap uppercase">
+                            WITH ROBUST CLEAN ARCHITECTURE.
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Editorial Bottom Caption -->
+                <div class="max-w-6xl mx-auto px-6 mt-10 md:mt-14 flex justify-between items-center text-xs md:text-sm text-[#7e766c] uppercase tracking-widest font-mono">
+                    <span>[ 01 / PHILOSOPHY ]</span>
+                    <span class="hidden sm:inline">ENGINEERED BY MUHAMMAD MOOSA</span>
+                    <span>[ SCROLL ✦ ]</span>
+                </div>
+            </section>
+
+            <!-- Page 2: What I Do / Services Section -->
+            <div id="page2" class="w-full z-40 relative">
+                <div class="page2Child bg-[#1A1A1A] min-h-dvh relative z-[5] rounded-tr-4xl rounded-tl-4xl px-4 py-8 md:px-5 lg:px-6 md:py-10">
+                    <div class="animateHeadingPg2">
+                        <h2 class="text-[15vw] md:text-8xl xl:text-9xl font-medium text-[#e8e8e3] uppercase">
+                            What I<br class="hidden sm:inline"> Do /
+                        </h2>
+                    </div>
+
+                    <div id="services" class="serviText flex w-full flex-col md:flex-row justify-end items-baseline gap-5 md:gap-12 py-8 md:py-11">
+                        <p class="para text-[#d1d1c7] text-[20px] md:text-lg uppercase tracking-wider">( Skills / Services )</p>
+                        <div class="serviText2 w-full md:w-[45%]">
+                            <p class="text-[#a29e9a] text-xl lg:text-2xl leading-relaxed">
+                                I engineer fullstack web applications, open-source utilities, and interactive digital experiences. Focused on clean architecture, sub-second performance, and intuitive interfaces.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Stacking Services Cards -->
+                    <div class="services relative">
+                        <!-- Service Box 1 -->
+                        <div class="services-box box1 flex flex-col justify-between items-start border-t border-[#7e766c] bg-[#1A1A1A] py-10">
+                            <div class="main-services-box flex flex-col gap-3 md:gap-0 md:flex-row justify-between w-full items-baseline">
+                                <div class="serial-no hidden md:block md:w-[30%]">
+                                    <h2 class="text-3xl md:text-5xl text-[#d1d1c7] font-semibold">(01)</h2>
+                                </div>
+                                <div class="flex md:w-[70%] lg:w-[65%] xl:w-[60%] 2xl:w-[56%] justify-between items-baseline">
+                                    <div class="xl:w-[90%]">
+                                        <div class="title">
+                                            <h2 class="text-3xl md:text-5xl mb-6 text-[#d1d1c7] font-semibold">
+                                                Fullstack Web Engineering
+                                            </h2>
+                                        </div>
+                                        <div class="main-services-box2-child">
+                                            <p class="text-[#a29e9a] text-lg md:text-xl w-full xl:w-[80%] leading-relaxed">
+                                                Architecting performant, production-ready web apps using Next.js, React, Node.js, and TypeScript. From database modeling and secure REST APIs to server-side rendering and responsive client interfaces.
+                                            </p>
+                                            <div class="list py-5">
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6 border-b border-b-[#a29e9a]">
+                                                    <span class="text-xl text-[#7e766c]">01</span>
+                                                    Next.js, React & TypeScript
+                                                </div>
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6 border-b border-b-[#a29e9a]">
+                                                    <span class="text-xl text-[#7e766c]">02</span>
+                                                    RESTful APIs & Backend Architecture
+                                                </div>
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6">
+                                                    <span class="text-xl text-[#7e766c]">03</span>
+                                                    Database Design & Serverless Deployment
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon hidden xl:w-[5%] 2xl:w-[2%] xl:block">
+                                        <img class="xl:w-full" src="https://images.ctfassets.net/fwy0yv14lkat/3OTKoEZctLHsU75qKdenDH/a241fd9d6e8c8f0622811fe2bed44b87/Shape.svg" alt="star" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Box 2 -->
+                        <div class="services-box box2 flex flex-col justify-between items-start border-t border-[#7e766c] bg-[#1A1A1A] py-10">
+                            <div class="main-services-box flex flex-col gap-3 md:gap-0 md:flex-row justify-between w-full items-baseline">
+                                <div class="serial-no hidden md:block md:w-[30%]">
+                                    <h2 class="text-3xl md:text-5xl text-[#d1d1c7] font-semibold">(02)</h2>
+                                </div>
+                                <div class="flex md:w-[70%] lg:w-[65%] xl:w-[60%] justify-between 2xl:w-[56%] items-baseline">
+                                    <div class="xl:w-[90%]">
+                                        <div class="title">
+                                            <h2 class="text-3xl md:text-5xl mb-6 text-[#d1d1c7] font-semibold">
+                                                AI Utilities & Security Tools
+                                            </h2>
+                                        </div>
+                                        <div class="main-services-box2-child">
+                                            <p class="text-[#a29e9a] text-lg md:text-xl w-full xl:w-[80%] leading-relaxed">
+                                                Building specialized tools like CommandsLab for penetration testers, NLP-driven humanizers that bypass AI detection, and browser-first computer vision utilities like instant background cutouts.
+                                            </p>
+                                            <div class="list py-5">
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6 border-b border-b-[#a29e9a]">
+                                                    <span class="text-xl text-[#7e766c]">01</span>
+                                                    CommandsLab (Kali Linux Command Suite)
+                                                </div>
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6 border-b border-b-[#a29e9a]">
+                                                    <span class="text-xl text-[#7e766c]">02</span>
+                                                    AI Text Humanizer & NLP Tools
+                                                </div>
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6">
+                                                    <span class="text-xl text-[#7e766c]">03</span>
+                                                    Client-side File Converters & Canvas Engines
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon hidden xl:w-[5%] 2xl:w-[2%] xl:block">
+                                        <img class="xl:w-full" src="https://images.ctfassets.net/fwy0yv14lkat/3OTKoEZctLHsU75qKdenDH/a241fd9d6e8c8f0622811fe2bed44b87/Shape.svg" alt="star" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Box 3 -->
+                        <div class="services-box box3 flex flex-col justify-between items-start border-t border-[#7e766c] bg-[#1A1A1A] py-10">
+                            <div class="main-services-box flex flex-col gap-3 md:gap-0 md:flex-row justify-between w-full items-baseline">
+                                <div class="serial-no hidden md:block md:w-[30%]">
+                                    <h2 class="text-3xl md:text-5xl text-[#d1d1c7] font-semibold">(03)</h2>
+                                </div>
+                                <div class="flex md:w-[70%] justify-between lg:w-[65%] xl:w-[60%] 2xl:w-[56%] items-baseline">
+                                    <div class="xl:w-[90%]">
+                                        <div class="title">
+                                            <h2 class="text-3xl md:text-5xl mb-6 text-[#d1d1c7] font-semibold">
+                                                Creative Motion & Modern UI
+                                            </h2>
+                                        </div>
+                                        <div class="main-services-box2-child">
+                                            <p class="text-[#a29e9a] text-lg md:text-xl w-full xl:w-[80%] leading-relaxed">
+                                                Crafting immersive, tactile digital journeys using GSAP ScrollTrigger, Lenis smooth inertia, and physics-driven micro-interactions. Making interfaces feel physically alive without compromising load speeds.
+                                            </p>
+                                            <div class="list py-5">
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6 border-b border-b-[#a29e9a]">
+                                                    <span class="text-xl text-[#7e766c]">01</span>
+                                                    GSAP ScrollTrigger & Pinned Scrollytelling
+                                                </div>
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6 border-b border-b-[#a29e9a]">
+                                                    <span class="text-xl text-[#7e766c]">02</span>
+                                                    Lenis Inertia Scrolling Physics
+                                                </div>
+                                                <div class="listItem text-xl md:text-2xl lg:text-3xl text-[#a29e9a] font-medium flex items-center py-4 gap-6">
+                                                    <span class="text-xl text-[#7e766c]">03</span>
+                                                    Tailwind CSS & Micro-Animations
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="icon hidden xl:w-[5%] 2xl:w-[2%] xl:block">
+                                        <img class="xl:w-full" src="https://images.ctfassets.net/fwy0yv14lkat/3OTKoEZctLHsU75qKdenDH/a241fd9d6e8c8f0622811fe2bed44b87/Shape.svg" alt="star" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW SECTION: CommandsLab Flagship Feature Spotlight -->
+                    <div id="commandslab" class="w-full my-16 pt-12 border-t border-[#7e766c]">
+                        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-8 gap-4">
+                            <div>
+                                <span class="text-[#8c8c73] uppercase tracking-widest text-sm font-semibold">Flagship Open Source Project</span>
+                                <h2 class="text-4xl md:text-6xl xl:text-7xl font-medium text-[#e8e8e3] mt-2">
+                                    CommandsLab /
+                                </h2>
+                            </div>
+                            <p class="text-[#a29e9a] text-lg max-w-lg leading-relaxed">
+                                Free online penetration testing command generator tool for ethical hackers. Instantly builds complex commands for Nmap, SQLMap, Hydra, Metasploit, and Reverse Shells with zero server round-trips.
+                            </p>
+                        </div>
+
+                        <!-- Interactive Terminal Teaser Component -->
+                        <div class="terminal-window bg-[#0d0d0d] rounded-2xl border border-[#393632] overflow-hidden p-4 md:p-6 my-6 shadow-2xl">
+                            <!-- Terminal Header -->
+                            <div class="flex flex-wrap items-center justify-between pb-4 border-b border-[#262626] gap-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-[#ff5f56] inline-block"></span>
+                                    <span class="w-3 h-3 rounded-full bg-[#ffbd2e] inline-block"></span>
+                                    <span class="w-3 h-3 rounded-full bg-[#27c93f] inline-block"></span>
+                                    <span class="text-[#7e766c] text-xs font-mono ml-2">moosa@commandslab:~</span>
+                                </div>
+
+                                <!-- Tool Tabs Switcher -->
+                                <div class="flex flex-wrap items-center gap-2 text-xs font-mono">
+                                    <button class="terminal-tab px-3 py-1 rounded-md bg-[#393632] text-[#e8e8e3] cursor-pointer transition-all active" data-tool="nmap">Nmap</button>
+                                    <button class="terminal-tab px-3 py-1 rounded-md bg-[#1a1a1a] text-[#a29e9a] hover:text-[#e8e8e3] cursor-pointer transition-all" data-tool="sqlmap">SQLMap</button>
+                                    <button class="terminal-tab px-3 py-1 rounded-md bg-[#1a1a1a] text-[#a29e9a] hover:text-[#e8e8e3] cursor-pointer transition-all" data-tool="hydra">Hydra</button>
+                                    <button class="terminal-tab px-3 py-1 rounded-md bg-[#1a1a1a] text-[#a29e9a] hover:text-[#e8e8e3] cursor-pointer transition-all" data-tool="shell">RevShell</button>
+                                </div>
+                            </div>
+
+                            <!-- Terminal Screen Output -->
+                            <div class="py-6 font-mono text-sm md:text-base space-y-3">
+                                <div class="text-[#7e766c] text-xs">
+                                    # Select tool tab to generate command client-side:
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <span class="text-[#8c8c73] font-bold">➜</span>
+                                    <span class="text-[#e8e8e3] font-mono break-all" id="terminalOutput">nmap -sV -sC -A -p- -T4 --script=vuln 192.168.1.100</span>
+                                </div>
+                                <div class="text-[#a29e9a] text-xs pt-2" id="terminalExplanation">
+                                    // Full aggressive TCP port scan, OS detection, version detection, default scripts & vulnerability auditing.
+                                </div>
+                            </div>
+
+                            <!-- Terminal Footer Actions -->
+                            <div class="flex flex-wrap items-center justify-between pt-4 border-t border-[#262626] gap-3">
+                                <div class="flex items-center gap-3">
+                                    <button id="copyCommandBtn" class="px-4 py-2 bg-[#8c8c73] text-[#1A1A1A] font-medium text-xs rounded-lg hover:bg-[#a29e9a] transition-all cursor-pointer flex items-center gap-1.5">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <span id="copyBtnText">Copy Command</span>
+                                    </button>
+                                    <span class="text-xs text-[#7e766c] hidden sm:inline">100% Private • Client-Side Generator</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <a href="https://commandslab.vercel.app/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#1A1A1A] text-[#e8e8e3] border border-[#393632] hover:border-[#8c8c73] text-xs rounded-lg transition-all flex items-center gap-1.5">
+                                        <span>Launch App</span>
+                                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                    <a href="https://github.com/moosa2005/Commands_Lab" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-[#1A1A1A] text-[#a29e9a] hover:text-[#e8e8e3] border border-[#393632] text-xs rounded-lg transition-all flex items-center gap-1.5">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span>Source</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page 3: Selected Works / Projects Section -->
+                    <div id="project" class="works pt-8 md:pt-12">
+                        <div class="animateHeadingPg3">
+                            <p class="text-[15vw] leading-none md:text-8xl xl:text-9xl mb-4 font-medium text-[#e8e8e3] uppercase">
+                                Selected
+                            </p>
+                            <p class="text-[15vw] leading-none md:text-8xl xl:text-9xl font-medium text-[#e8e8e3] uppercase">
+                                Works /
+                            </p>
+                        </div>
+
+                        <div class="projectText flex w-full flex-col md:flex-row justify-end items-baseline gap-5 md:gap-12 py-8 md:py-11">
+                            <p class="Projectpara text-[#d1d1c7] text-[20px] md:text-lg uppercase tracking-wider">( Projects / Works )</p>
+                            <div class="ProjectText2 w-full md:w-[45%]">
+                                <p class="text-[#a29e9a] text-xl lg:text-2xl leading-relaxed">
+                                    Showcasing production-ready fullstack web systems, AI transformation engines, and utility tools engineered for real-world impact.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="Allprojects w-full">
+                            <div class="Project flex h-full justify-between items-start">
+                                <!-- Sticky Number Counter (Supports 5 Projects) -->
+                                <div class="hidden number-counter relative text-[20vw] h-fit overflow-hidden md:flex text-[#a29e9a] leading-[1] w-[40%] select-none">
+                                    <span class="number-static relative">0</span>
+                                    <div class="number-animated-wrapper relative h-[1em] overflow-hidden">
+                                        <div class="number-animated flex flex-col w-fit leading-[1]">
+                                            <span class="inline-block h-[1em]">1.</span>
+                                            <span class="inline-block h-[1em]">2.</span>
+                                            <span class="inline-block h-[1em]">3.</span>
+                                            <span class="inline-block h-[1em]">4.</span>
+                                            <span class="inline-block h-[1em]">5.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Projects List (5 Projects) -->
+                                <div class="projectList w-full md:w-[60%] 2xl:w-[56%] flex flex-col">
+                                    
+                                    <!-- PROJECT 1: CommandsLab (FLAGSHIP) -->
+                                    <div class="project-detail md:mb-12 border-b border-[#7e766c] mb-8 pb-8 md:pb-12 group">
+                                        <div class="project-category py-2 text-[#a29e9a] text-sm md:text-base flex items-center justify-between">
+                                            <div class="flex items-center gap-2">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f] inline-block animate-pulse"></span>
+                                                <span class="font-mono text-xs md:text-sm uppercase tracking-wider text-[#d1d1c7]">Next.js • TypeScript • Tailwind CSS • Cybersecurity</span>
+                                            </div>
+                                            <span class="border border-[#7e766c] text-[#1A1A1A] bg-[#bfbfb1] font-semibold rounded-full text-xs px-3 py-1">Flagship</span>
+                                        </div>
+                                        <div class="projectName my-4">
+                                            <h3 class="text-[#e8e8e3] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight group-hover:text-white transition-colors">
+                                                CommandsLab — Pentesting Tool
+                                            </h3>
+                                            <p class="text-[#a29e9a] text-base md:text-lg mt-3 max-w-2xl leading-relaxed">
+                                                Flagship Kali Linux penetration testing command suite generating client-side commands for Nmap, SQLMap, Hydra, Metasploit, and Reverse Shells with zero server round-trips.
+                                            </p>
+                                        </div>
+                                        <div class="projectTags flex flex-wrap items-center justify-between gap-4 pt-3">
+                                            <div class="flex flex-wrap gap-2">
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">100% Client-Side</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Nmap / Hydra / SQLMap</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Ethical Hacking</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <a href="https://github.com/moosa2005/Commands_Lab" target="_blank" rel="noopener noreferrer"
+                                                    class="border border-[#7e766c] text-[#e8e8e3] hover:bg-[#393632] transition-all rounded-full text-xs font-medium px-4 py-2 flex items-center gap-1.5">
+                                                    <i class="fa-brands fa-github"></i>
+                                                    <span>Source Code</span>
+                                                </a>
+                                                <a href="https://commandslab.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                                    class="bg-[#8c8c73] hover:bg-[#a29e9a] text-[#1A1A1A] font-semibold transition-all rounded-full text-xs px-5 py-2 flex items-center gap-1.5 shadow-md hover:scale-105">
+                                                    <span>Live Demo</span>
+                                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PROJECT 2: AI Humanizer -->
+                                    <div class="project-detail md:mb-12 border-b border-[#7e766c] mb-8 pb-8 md:pb-12 group">
+                                        <div class="project-category py-2 text-[#a29e9a] text-sm md:text-base flex items-center justify-between">
+                                            <div class="flex items-center gap-2">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-[#8c8c73] inline-block"></span>
+                                                <span class="font-mono text-xs md:text-sm uppercase tracking-wider text-[#d1d1c7]">React.js • AI NLP • Tailwind CSS</span>
+                                            </div>
+                                            <span class="border border-[#7e766c] text-[#1A1A1A] bg-[#bfbfb1] font-semibold rounded-full text-xs px-3 py-1">NLP AI</span>
+                                        </div>
+                                        <div class="projectName my-4">
+                                            <h3 class="text-[#e8e8e3] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight group-hover:text-white transition-colors">
+                                                AI Humanizer
+                                            </h3>
+                                            <p class="text-[#a29e9a] text-base md:text-lg mt-3 max-w-2xl leading-relaxed">
+                                                Converts AI-generated output into natural human-written style so plagiarism and AI content detectors cannot flag it.
+                                            </p>
+                                        </div>
+                                        <div class="projectTags flex flex-wrap items-center justify-between gap-4 pt-3">
+                                            <div class="flex flex-wrap gap-2">
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">AI Bypass</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Text Transformation</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Plagiarism Guard</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <a href="https://github.com/moosa2005/humanizerr" target="_blank" rel="noopener noreferrer"
+                                                    class="border border-[#7e766c] text-[#e8e8e3] hover:bg-[#393632] transition-all rounded-full text-xs font-medium px-4 py-2 flex items-center gap-1.5">
+                                                    <i class="fa-brands fa-github"></i>
+                                                    <span>Source Code</span>
+                                                </a>
+                                                <a href="https://humanizerr.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                                    class="bg-[#8c8c73] hover:bg-[#a29e9a] text-[#1A1A1A] font-semibold transition-all rounded-full text-xs px-5 py-2 flex items-center gap-1.5 shadow-md hover:scale-105">
+                                                    <span>Live Demo</span>
+                                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PROJECT 3: Interactive Resume Builder -->
+                                    <div class="project-detail md:mb-12 border-b border-[#7e766c] mb-8 pb-8 md:pb-12 group">
+                                        <div class="project-category py-2 text-[#a29e9a] text-sm md:text-base flex items-center justify-between">
+                                            <div class="flex items-center gap-2">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-[#8c8c73] inline-block"></span>
+                                                <span class="font-mono text-xs md:text-sm uppercase tracking-wider text-[#d1d1c7]">TypeScript • React.js • Dynamic PDF Engine</span>
+                                            </div>
+                                            <span class="border border-[#7e766c] text-[#1A1A1A] bg-[#bfbfb1] font-semibold rounded-full text-xs px-3 py-1">Utility</span>
+                                        </div>
+                                        <div class="projectName my-4">
+                                            <h3 class="text-[#e8e8e3] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight group-hover:text-white transition-colors">
+                                                Interactive Resume Builder
+                                            </h3>
+                                            <p class="text-[#a29e9a] text-base md:text-lg mt-3 max-w-2xl leading-relaxed">
+                                                Real-time interactive resume generator with customizable professional templates, dynamic section reordering, live preview, and direct PDF export.
+                                            </p>
+                                        </div>
+                                        <div class="projectTags flex flex-wrap items-center justify-between gap-4 pt-3">
+                                            <div class="flex flex-wrap gap-2">
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Real-time Preview</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">PDF Generation</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Modular Sections</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <a href="https://github.com/moosa2005/ResumeBuilder" target="_blank" rel="noopener noreferrer"
+                                                    class="border border-[#7e766c] text-[#e8e8e3] hover:bg-[#393632] transition-all rounded-full text-xs font-medium px-4 py-2 flex items-center gap-1.5">
+                                                    <i class="fa-brands fa-github"></i>
+                                                    <span>Source Code</span>
+                                                </a>
+                                                <a href="https://github.com/moosa2005/ResumeBuilder" target="_blank" rel="noopener noreferrer"
+                                                    class="bg-[#8c8c73] hover:bg-[#a29e9a] text-[#1A1A1A] font-semibold transition-all rounded-full text-xs px-5 py-2 flex items-center gap-1.5 shadow-md hover:scale-105">
+                                                    <span>View Project</span>
+                                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PROJECT 4: AI Background Remover -->
+                                    <div class="project-detail md:mb-12 border-b border-[#7e766c] mb-8 pb-8 md:pb-12 group">
+                                        <div class="project-category py-2 text-[#a29e9a] text-sm md:text-base flex items-center justify-between">
+                                            <div class="flex items-center gap-2">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-[#8c8c73] inline-block"></span>
+                                                <span class="font-mono text-xs md:text-sm uppercase tracking-wider text-[#d1d1c7]">JavaScript • HTML5 Canvas • Computer Vision</span>
+                                            </div>
+                                            <span class="border border-[#7e766c] text-[#1A1A1A] bg-[#bfbfb1] font-semibold rounded-full text-xs px-3 py-1">Vision</span>
+                                        </div>
+                                        <div class="projectName my-4">
+                                            <h3 class="text-[#e8e8e3] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight group-hover:text-white transition-colors">
+                                                AI Background Remover
+                                            </h3>
+                                            <p class="text-[#a29e9a] text-base md:text-lg mt-3 max-w-2xl leading-relaxed">
+                                                Client-side automated background removal application using edge detection algorithms to generate clean transparent PNG cutouts without server upload.
+                                            </p>
+                                        </div>
+                                        <div class="projectTags flex flex-wrap items-center justify-between gap-4 pt-3">
+                                            <div class="flex flex-wrap gap-2">
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Edge Detection</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Canvas API</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Transparent PNG</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <a href="https://github.com/moosa2005/bg-remover" target="_blank" rel="noopener noreferrer"
+                                                    class="border border-[#7e766c] text-[#e8e8e3] hover:bg-[#393632] transition-all rounded-full text-xs font-medium px-4 py-2 flex items-center gap-1.5">
+                                                    <i class="fa-brands fa-github"></i>
+                                                    <span>Source Code</span>
+                                                </a>
+                                                <a href="https://github.com/moosa2005/bg-remover" target="_blank" rel="noopener noreferrer"
+                                                    class="bg-[#8c8c73] hover:bg-[#a29e9a] text-[#1A1A1A] font-semibold transition-all rounded-full text-xs px-5 py-2 flex items-center gap-1.5 shadow-md hover:scale-105">
+                                                    <span>View Project</span>
+                                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- PROJECT 5: Universal File Converter -->
+                                    <div class="project-detail md:mb-12 border-b border-[#7e766c] mb-8 pb-8 md:pb-12 group">
+                                        <div class="project-category py-2 text-[#a29e9a] text-sm md:text-base flex items-center justify-between">
+                                            <div class="flex items-center gap-2">
+                                                <span class="w-2.5 h-2.5 rounded-full bg-[#8c8c73] inline-block"></span>
+                                                <span class="font-mono text-xs md:text-sm uppercase tracking-wider text-[#d1d1c7]">React.js • WebAssembly • Client Processing</span>
+                                            </div>
+                                            <span class="border border-[#7e766c] text-[#1A1A1A] bg-[#bfbfb1] font-semibold rounded-full text-xs px-3 py-1">Converter</span>
+                                        </div>
+                                        <div class="projectName my-4">
+                                            <h3 class="text-[#e8e8e3] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight group-hover:text-white transition-colors">
+                                                Universal File Converter
+                                            </h3>
+                                            <p class="text-[#a29e9a] text-base md:text-lg mt-3 max-w-2xl leading-relaxed">
+                                                Privacy-centric multi-format document and media converter transforming documents, images, and audio files directly in the browser.
+                                            </p>
+                                        </div>
+                                        <div class="projectTags flex flex-wrap items-center justify-between gap-4 pt-3">
+                                            <div class="flex flex-wrap gap-2">
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Multi-Format</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">WebAssembly</span>
+                                                <span class="border border-[#7e766c]/60 text-[#d1d1c7] rounded-full text-xs px-3 py-1 font-mono">Zero Server Storage</span>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <a href="https://github.com/moosa2005/convertor" target="_blank" rel="noopener noreferrer"
+                                                    class="border border-[#7e766c] text-[#e8e8e3] hover:bg-[#393632] transition-all rounded-full text-xs font-medium px-4 py-2 flex items-center gap-1.5">
+                                                    <i class="fa-brands fa-github"></i>
+                                                    <span>Source Code</span>
+                                                </a>
+                                                <a href="https://convertor-rose.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                                    class="bg-[#8c8c73] hover:bg-[#a29e9a] text-[#1A1A1A] font-semibold transition-all rounded-full text-xs px-5 py-2 flex items-center gap-1.5 shadow-md hover:scale-105">
+                                                    <span>Live Demo</span>
+                                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW SECTION: Engineering Workflow / How I Build -->
+                    <div id="workflow" class="w-full my-16 pt-12 border-t border-[#7e766c]">
+                        <div class="animateHeadingWorkflow">
+                            <span class="text-[#8c8c73] uppercase tracking-widest text-sm font-semibold">Engineering Methodology</span>
+                            <h2 class="text-[12vw] md:text-7xl xl:text-8xl font-medium text-[#e8e8e3] uppercase mt-2">
+                                How I<br class="hidden sm:inline"> Build /
+                            </h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+                            <!-- Phase 1 -->
+                            <div class="workflow-card bg-[#141414] border border-[#262626] hover:border-[#8c8c73]/50 transition-all rounded-2xl p-6 md:p-8 flex flex-col justify-between group">
+                                <div>
+                                    <span class="text-3xl md:text-4xl font-semibold text-[#8c8c73] block mb-4">01</span>
+                                    <h4 class="text-2xl md:text-3xl font-medium text-[#d1d1c7] mb-3 group-hover:text-white transition-colors">
+                                        Discovery & System Architecture
+                                    </h4>
+                                    <p class="text-[#a29e9a] text-base leading-relaxed">
+                                        Defining explicit specifications, user journey maps, and selecting optimal fullstack tech stacks. Modeling scalable database entities, API endpoints, and clean modular structures.
+                                    </p>
+                                </div>
+                                <div class="pt-6 mt-6 border-t border-[#262626] flex items-center justify-between text-xs text-[#7e766c] uppercase tracking-wider font-mono">
+                                    <span>Specification</span>
+                                    <span>Architecture</span>
+                                </div>
+                            </div>
+
+                            <!-- Phase 2 -->
+                            <div class="workflow-card bg-[#141414] border border-[#262626] hover:border-[#8c8c73]/50 transition-all rounded-2xl p-6 md:p-8 flex flex-col justify-between group">
+                                <div>
+                                    <span class="text-3xl md:text-4xl font-semibold text-[#8c8c73] block mb-4">02</span>
+                                    <h4 class="text-2xl md:text-3xl font-medium text-[#d1d1c7] mb-3 group-hover:text-white transition-colors">
+                                        Rapid Prototyping & UX Wireframing
+                                    </h4>
+                                    <p class="text-[#a29e9a] text-base leading-relaxed">
+                                        Converting ideas into tangible interactive prototypes with tactile user feedback. Prioritizing accessibility, mobile ergonomics, and frictionless ergonomics.
+                                    </p>
+                                </div>
+                                <div class="pt-6 mt-6 border-t border-[#262626] flex items-center justify-between text-xs text-[#7e766c] uppercase tracking-wider font-mono">
+                                    <span>Wireframing</span>
+                                    <span>UX Validation</span>
+                                </div>
+                            </div>
+
+                            <!-- Phase 3 -->
+                            <div class="workflow-card bg-[#141414] border border-[#262626] hover:border-[#8c8c73]/50 transition-all rounded-2xl p-6 md:p-8 flex flex-col justify-between group">
+                                <div>
+                                    <span class="text-3xl md:text-4xl font-semibold text-[#8c8c73] block mb-4">03</span>
+                                    <h4 class="text-2xl md:text-3xl font-medium text-[#d1d1c7] mb-3 group-hover:text-white transition-colors">
+                                        Fullstack Execution & Security
+                                    </h4>
+                                    <p class="text-[#a29e9a] text-base leading-relaxed">
+                                        Writing clean, typed TypeScript code with strict linting, robust error boundaries, client-side encryption, and security best practices inherited from pentesting experience.
+                                    </p>
+                                </div>
+                                <div class="pt-6 mt-6 border-t border-[#262626] flex items-center justify-between text-xs text-[#7e766c] uppercase tracking-wider font-mono">
+                                    <span>Type Safety</span>
+                                    <span>Security Hardening</span>
+                                </div>
+                            </div>
+
+                            <!-- Phase 4 -->
+                            <div class="workflow-card bg-[#141414] border border-[#262626] hover:border-[#8c8c73]/50 transition-all rounded-2xl p-6 md:p-8 flex flex-col justify-between group">
+                                <div>
+                                    <span class="text-3xl md:text-4xl font-semibold text-[#8c8c73] block mb-4">04</span>
+                                    <h4 class="text-2xl md:text-3xl font-medium text-[#d1d1c7] mb-3 group-hover:text-white transition-colors">
+                                        Motion Choreography & Launch
+                                    </h4>
+                                    <p class="text-[#a29e9a] text-base leading-relaxed">
+                                        Layering butter-smooth Lenis inertia scrolling, GSAP ScrollTrigger timelines, zero-layout-shift asset delivery, and continuous automated CI/CD deployments.
+                                    </p>
+                                </div>
+                                <div class="pt-6 mt-6 border-t border-[#262626] flex items-center justify-between text-xs text-[#7e766c] uppercase tracking-wider font-mono">
+                                    <span>Smooth Motion</span>
+                                    <span>Global CI/CD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Section -->
+                <div class="aboutme mt-[-1px] md:mt-[-2px] xl:mt-0 bg-[#1A1A1A] rounded-bl-4xl rounded-br-4xl">
+                    <div class="aboutChild1 flex justify-between items-baseline px-4 py-0 md:px-5 lg:px-6 md:py-8">
+                        <div class="about-icon hidden lg:block lg:w-[30%]">
+                            <svg stroke="currentColor" fill="none" stroke-width="1" viewBox="6 6 12 12"
+                                stroke-linecap="round" stroke-linejoin="round" class="block" color="#D1D1C7"
+                                style="color:#D1D1C7" height="64" width="64" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="7" y1="7" x2="17" y2="17"></line>
+                                <polyline points="17 7 17 17 7 17"></polyline>
+                            </svg>
+                        </div>
+                        <div class="about-heading w-full lg:w-[65%] xl:w-[60%] 2xl:w-[56%]">
+                            <div class="overflow-hidden mb-2.5">
+                                <h2 class="text-5xl sm:text-6xl md:text-8xl xl:text-9xl font-medium text-[#d1d1c7]">
+                                    FULLSTACK,
+                                </h2>
+                            </div>
+                            <div class="overflow-hidden">
+                                <h2 class="text-5xl sm:text-6xl md:text-8xl xl:text-9xl font-medium text-[#d1d1c7]">
+                                    DEVELOPER,
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="about" class="aboutChild2 flex justify-between gap-8 flex-col lg:flex-row px-4 py-8 md:px-5 lg:px-6 md:py-8">
+                        <div class="description w-full lg:w-[85%] xl:w-[75%]">
+                            <p class="text-[#d1d1c7] text-xl md:text-3xl leading-relaxed">
+                                Driven by curiosity and a commitment to clean code, I build digital tools and fullstack applications that empower users, solve practical problems, and look visually stunning.
+                            </p>
+
+                            <div class="aboutChild3 flex-col gap-5 md:gap-0 md:flex-row flex justify-between py-10 md:py-8">
+                                <div class="aboutChildHeading overflow-hidden w-full md:w-[30%]">
+                                    <p class="text-[#d1d1c7] text-[20px] md:text-lg uppercase tracking-wider">( ABOUT ME )</p>
+                                </div>
+                                <div class="aboutChildDesciption w-full md:w-[70%]">
+                                    <p class="text-[#a29e9a] text-lg md:text-xl leading-relaxed">
+                                        Hey everyone! I'm Muhammad Moosa, a web developer and fullstack engineer from Pakistan. I specialize in building efficient, responsive web applications and developer utilities. Whether crafting a penetration testing tool like CommandsLab, building AI text humanizers, or orchestrating smooth web animations, I focus on delivering clean, reliable software that feels effortless to use.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="aboutChild4 flex flex-col gap-5 md:gap-0 md:flex-row justify-between pb-6 md:pb-8">
+                                <div class="aboutChildHeading2 overflow-hidden w-full md:w-[30%]">
+                                    <p class="text-[#d1d1c7] text-[20px] md:text-lg uppercase tracking-wider">( STACK & EXPERTISE )</p>
+                                </div>
+                                <div class="aboutChildDesciption2 w-full md:w-[70%]">
+                                    <p class="text-[#a29e9a] text-lg md:text-xl leading-relaxed">
+                                        My core toolkit includes Next.js, React.js, TypeScript, JavaScript, Node.js, Python, Tailwind CSS, GSAP ScrollTrigger, and Linux environments. I bring together technical depth with a strong appreciation for graphic design and interactive aesthetics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <footer class="footer1 pt-8 px-4 pb-4 md:px-5 lg:px-6 md:pb-8 bg-[#E8E8E3]">
+                <div class="contact-us mb-4">
+                    <span class="text-4xl sm:text-5xl md:text-7xl text-[#1A1A1A] inline-flex items-center gap-3 font-medium">
+                        Got a project in mind?
+                        <svg stroke="currentColor" fill="none" stroke-width="1" viewBox="6 6 12 12"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="hidden lg:inline h-[50px] w-[65px] align-middle text-[#1A1A1A]"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="7" y1="7" x2="17" y2="17"></line>
+                            <polyline points="17 7 17 17 7 17"></polyline>
+                        </svg>
+                    </span>
+                </div>
+
+                <div id="contact" class="serviText2 w-full xl:w-1/2 flex flex-col space-y-7">
+                    <p class="text-[#6b645c] text-lg md:text-2xl leading-relaxed">
+                        Let’s build something meaningful together — whether you're launching a brand-new web application, building developer tooling, or revamping an existing experience.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4">
+                        <a href="mailto:muhammadmoosa9998@gmail.com" class="inline-block">
+                            <button class="Emailbtn relative bg-[#393632] cursor-pointer px-6 py-2.5 rounded-full overflow-hidden group flex items-center gap-2">
+                                <div class="absolute inset-0 bg-[#8c8c73] rounded-full translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out z-0">
+                                </div>
+                                <div class="relative h-[28px] overflow-hidden z-10">
+                                    <div class="flex items-center gap-2 transition-transform duration-500 ease-in-out group-hover:-translate-y-full">
+                                        <span class="text-[#E8E8E3] text-base md:text-lg font-medium">Let's Connect</span>
+                                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="6 6 12 12" stroke-linecap="round" stroke-linejoin="round" class="size-2.5 md:size-3 text-[#E8E8E3]" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="7" y1="7" x2="17" y2="17"></line>
+                                            <polyline points="17 7 17 17 7 17"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="absolute top-full left-0 flex items-center gap-2 w-full transition-all duration-500 ease-in-out group-hover:top-0">
+                                        <span class="text-[#E8E8E3] text-base md:text-lg font-medium">Let's Connect</span>
+                                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="6 6 12 12" stroke-linecap="round" stroke-linejoin="round" class="size-2.5 md:size-3 text-[#E8E8E3]" xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="7" y1="7" x2="17" y2="17"></line>
+                                            <polyline points="17 7 17 17 7 17"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                        </a>
+                        <a href="tel:+923320826820" class="text-sm font-medium border border-[#7e766c] text-[#1A1A1A] px-4 py-2.5 rounded-full hover:bg-[#1A1A1A] hover:text-[#E8E8E3] transition-all">
+                            <i class="fa-solid fa-phone mr-1.5 text-xs"></i> +92 332 0826820
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer2 flex-col-reverse gap-6 md:flex-row flex items-start md:items-center w-full justify-between pt-12 border-t border-[#7e766c]/20 mt-8">
+                    <div class="footer-bottom w-full md:w-[50%]">
+                        <p class="text-[#393632] text-left text-sm md:text-base font-medium">
+                            © <span class="current-year"></span> Muhammad Moosa. All rights reserved.
+                        </p>
+                        <p class="text-[#6b645c] text-xs mt-1">
+                            Designed with Warm Editorial Monochromes • Built with Next-gen Web Motion
+                        </p>
+                    </div>
+
+                    <div class="footer3 flex justify-between w-full md:w-1/2">
+                        <div class="footer-section w-[45%]">
+                            <h3 class="mb-2.5 text-base text-[#1A1A1A] font-semibold uppercase tracking-wider">Navigation</h3>
+                            <div class="w-full h-[1px] bg-[#1A1A1A]"></div>
+                            <div class="my-3.5 space-y-2">
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="#services">Services</a>
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="#services">Services</a>
+                                </div>
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="#commandslab">CommandsLab</a>
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="#commandslab">CommandsLab</a>
+                                </div>
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="#project">Projects</a>
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="#project">Projects</a>
+                                </div>
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="#about">About</a>
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="#about">About</a>
+                                </div>
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a class="nav-links text-base text-[#1A1A1A] slide-text group-hover:-translate-y-full" href="./assets/Resume.pdf" download="Muhammad_Moosa_Resume.pdf">Resume</a>
+                                    <a class="nav-links text-base text-[#1A1A1A] slide-text group-hover:-translate-y-full" href="./assets/Resume.pdf" download="Muhammad_Moosa_Resume.pdf">Resume</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-section w-[45%]">
+                            <h3 class="mb-2.5 text-base text-[#1A1A1A] font-semibold uppercase tracking-wider">Connect</h3>
+                            <div class="w-full h-[1px] bg-[#1A1A1A]"></div>
+                            <div class="my-3.5 space-y-2">
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a target="_blank" rel="noopener noreferrer" class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="https://github.com/moosa2005">GitHub</a>
+                                    <a target="_blank" rel="noopener noreferrer" class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="https://github.com/moosa2005">GitHub</a>
+                                </div>
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a target="_blank" rel="noopener noreferrer" class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="https://www.linkedin.com/in/muhammad-moosa2005/">LinkedIn</a>
+                                    <a target="_blank" rel="noopener noreferrer" class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="https://www.linkedin.com/in/muhammad-moosa2005/">LinkedIn</a>
+                                </div>
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a target="_blank" rel="noopener noreferrer" class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="https://commandslab.vercel.app/">CommandsLab</a>
+                                    <a target="_blank" rel="noopener noreferrer" class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="https://commandslab.vercel.app/">CommandsLab</a>
+                                </div>
+                                <div class="menu-line w-fit group flex flex-col h-6 items-center relative overflow-hidden">
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="mailto:muhammadmoosa9998@gmail.com">Email Me</a>
+                                    <a class="nav-links text-[#1A1A1A] text-base slide-text group-hover:-translate-y-full" href="mailto:muhammadmoosa9998@gmail.com">Email Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- GSAP, Plugins & Lenis CDN Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
+        integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollToPlugin.min.js"
+        integrity="sha512-kz526itdNcpyMs18TLPOhsnIeOIO1JywWKbbF77zR+ZKpZ4gwubXhwaURHpt5Se9AAqSK2j8ID0LnfXsB2Jkjg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-<h1 align="center">👨‍💻 Devin Wildz Portfolio</h1>
+<h1 align="center">👨‍💻 Muhammad Moosa Portfolio</h1>
 
 <p align="center">
   <b>Front-End Developer • UI/UX Enthusiast • Animation Lover</b><br/>
@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-  <a href="https://your-portfolio-link.com" target="_blank">
+  <a href="https://dev-moosa-portfolio.vercel.app/" target="_blank">
     🔗 Live Demo
   </a> •
-  <a href="https://github.com/yourusername/portfolio" target="_blank">
+  <a href="https://github.com/moosa2005/dev.moosa-portfolio" target="_blank">
     💾 GitHub Repo
   </a>
 </p>
@@ -51,5 +51,5 @@
 <p align="center">
   ⭐ If you like this project, give it a star on GitHub!  
   <br/>
-  Made with ❤️ and smooth scroll by <b>Devin Wildz</b>
+  Made with ❤️ and smooth scroll by <b>Muhammad Moosa</b>
 </p>
